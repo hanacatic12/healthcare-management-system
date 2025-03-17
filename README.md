@@ -41,7 +41,7 @@ Patients should be able to upload necessary medical documents, such as lab resul
 **Doctor Document Transfer Page**
 Doctors should be able to upload and send medical documents, prescriptions, and test results to their patients. Additionally, they should be able to request specific documents from patients when further review is needed.
 
-### Notifications page [#6](https://github.com/hanacatic12/healthcare-management-system-issues/issues/6)
+### 2.6 Notifications page [#6](https://github.com/hanacatic12/healthcare-management-system-issues/issues/6)
 
 The notification page provides real-time updates to keep patients and doctors informed about appointments, medical documents, and requests.
 
