@@ -31,6 +31,16 @@ Doctors can manage appointments, view and update patient records, access a direc
 
 Doctors manage appointment requests by either accepting or rejecting them. When a patient requests an appointment, they include a note with their availability. If the doctor accepts the request, they select the exact date and time based on the patient's availability and notify them. If the request is rejected, the patient is informed, and the request is removed.
 
+## 2.5 Document transfer page
+
+This feature ensures efficient communication, ensuring a secure transfer of medical information between patients and doctors.
+
+**Patient document transfer page**
+Patients should be able to upload necessary medical documents, such as lab results or previous diagnoses. They should also have access to prescriptions and reports provided by their doctors.
+
+**Doctor document transfer page**
+Doctors should be able to upload and send medical documents, prescriptions, and test results to their patients. Additionally, they should be able to request specific documents from patients when further review is needed.
+
 ## 3. Site Map
 
 ![WhatsApp Image 2025-03-17 at 16 17 10_702d8d97](https://github.com/user-attachments/assets/3712aea0-664e-4e62-8310-36ab18e21a87)
