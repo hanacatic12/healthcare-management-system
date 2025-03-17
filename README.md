@@ -31,7 +31,7 @@ Doctors can manage appointments, view and update patient records, access a direc
 
 Doctors manage appointment requests by either accepting or rejecting them. When a patient requests an appointment, they include a note with their availability. If the doctor accepts the request, they select the exact date and time based on the patient's availability and notify them. If the request is rejected, the patient is informed, and the request is removed.
 
-### 2.5 Document transfer page [5](https://github.com/hanacatic12/healthcare-management-system-issues/issues/5)
+### 2.5 Document transfer page [#5](https://github.com/hanacatic12/healthcare-management-system-issues/issues/5)
 
 This feature ensures efficient communication, ensuring a secure transfer of medical information between patients and doctors.
 
