@@ -35,10 +35,10 @@ Doctors manage appointment requests by either accepting or rejecting them. When 
 
 This feature ensures efficient communication, ensuring a secure transfer of medical information between patients and doctors.
 
-**Patient document transfer page**
+**Patient Document Transfer Page**
 Patients should be able to upload necessary medical documents, such as lab results or previous diagnoses. They should also have access to prescriptions and reports provided by their doctors.
 
-**Doctor document transfer page**
+**Doctor Document Transfer Page**
 Doctors should be able to upload and send medical documents, prescriptions, and test results to their patients. Additionally, they should be able to request specific documents from patients when further review is needed.
 
 ## 3. Site Map
