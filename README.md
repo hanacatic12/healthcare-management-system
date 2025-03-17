@@ -31,7 +31,7 @@ Doctors can manage appointments, view and update patient records, access a direc
 
 Doctors manage appointment requests by either accepting or rejecting them. When a patient requests an appointment, they include a note with their availability. If the doctor accepts the request, they select the exact date and time based on the patient's availability and notify them. If the request is rejected, the patient is informed, and the request is removed.
 
-## Site Map
+## 3. Site Map
 
 ![WhatsApp Image 2025-03-17 at 16 17 10_702d8d97](https://github.com/user-attachments/assets/3712aea0-664e-4e62-8310-36ab18e21a87)
 
