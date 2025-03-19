@@ -44,7 +44,7 @@ Doctors should be able to upload and send medical documents, prescriptions, and 
 
 ### 2.6 Patient page (doctor) [#6](https://github.com/hanacatic12/healthcare-management-system-issues/issues/6)
 
-Doctors can easily search for their patients and view general information, including basic details and the patients current diagnosis. This page helps doctors quickly access important info and provides a clear overview of each patient.
+Doctors can easily search for their patients and view general information, including basic details and the patient’s current diagnosis. This page helps doctors quickly access important information and provides a clear overview of each patient. Additionally, doctors can update diagnoses by adding new ones or removing those from which the patient has recovered, ensuring that records remain accurate and up to date.
 
 ## 3. Site Map
 
