@@ -9,6 +9,7 @@ This healthcare management system is designed for the purpose of scheduling and 
 ### 2.1 Login / register page [#1](https://github.com/hanacatic12/healthcare-management-system/issues/1#issue-2922446771)
 
 The login / register feature lets users create their profile or simply log in (if they already have an account). The user is presented with the login fields, but is redirected to the register page by the 'register' button if they are a first time user. When the user accesses their profile, they are navigated to their profile page.
+However, the register feature is created only for patients. The doctors will already be inserted into the database, since we don't want random people creating doctor profiles.
 
 ### 2.2 Appointments page (patient) [#2](https://github.com/hanacatic12/healthcare-management-system/issues/2#issue-2922447943)
 
