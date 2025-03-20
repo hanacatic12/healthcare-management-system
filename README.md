@@ -23,10 +23,10 @@ If the patient cannot make it to the scheduled appointment, they can either canc
 The profile page is the main hub where users access key features. Upon logging in, they see their basic information along with an option to edit their profile. A sidebar menu provides quick navigation to other pages.
 
 **Patient Profile**
-Patients can schedule, view, or cancel appointments, access medical documents and prescriptions, check notifications for updates, and log out.
+Patients can schedule, view, or cancel appointments, access medical documents and prescriptions, and log out.
 
 **Doctor Profile**
-Doctors can manage appointments, view and update patient records, access a directory of colleagues, send documents and prescriptions, check notifications, and log out.
+Doctors can manage appointments, view and update patient information, send documents and prescriptions, and log out.
 
 ### 2.4 Appointments page (doctor) [#4](https://github.com/hanacatic12/healthcare-management-system/issues/4#issue-2922985123)
 
@@ -48,7 +48,107 @@ Doctors can easily search for their patients and view general information, inclu
 
 ## 3. Site Map
 
-![WhatsApp Image 2025-03-17 at 16 17 10_702d8d97](https://github.com/user-attachments/assets/3712aea0-664e-4e62-8310-36ab18e21a87)
+![alt text](https://github.com/hanacatic12/healthcare-management-system-issues/blob/main/HealthcareManagementSystemSiteMap.png?raw=true)
+
+## 4. API documentation
+
+### 4.1. API Endpoints
+
+| #  | CRUD    | URL Path                          | Request         | Response         | Description                                      | Functionality |
+|----|---------|----------------------------------|----------------|-----------------|--------------------------------------------------|--------------|
+| I.a | Login   | /login                           | LoginDto       | LoginDto       | Authenticates a user.                           | 2.1          |
+| I.b | Create  | /register                        | RegisterDto    | RegisterDto    | Registers a new patient.                        | 2.1          |
+| I.c | Read    | /user/{uid}                      | -              | UserDto        | Retrieves profile details of a user.            | 2.3          |
+| I.d | Update  | /user/{uid}                      | UserDto        | UserDto        | Updates profile information of a user.          | 2.3          |
+| II.a | Create | /appointments/{uid}              | AppointmentDto | AppointmentDto | Books a new appointment.                        | 2.2, 2.4     |
+| II.b | Read   | /appointments/{uid}              | -              | List AppointmentDto | Retrieves all upcoming appointments of a user. | 2.2, 2.4     |
+| II.c | Read   | /appointments/{uid}/{aid}        | -              | AppointmentDto | Retrieves a specific appointment.               | 2.2, 2.4     |
+| II.d | Update | /appointments/{uid}              | AppointmentDto | AppointmentDto | Updates an appointment (accepting, rescheduling, canceling). | 2.2, 2.4 |
+| III.a | Read  | /patients/{uid}                  | -              | List UserDto  | Retrieves all patients.                         | 2.6          |
+| III.b | Read  | /patients/{uid}/{uid}            | -              | UserDto        | Retrieves details of a specific patient.        | 2.6          |
+| III.c | Update | /patients/{uid}                  | StatusDto      | StatusDto      | Updates patient status (accept, reject).        | 2.6          |
+| IV.a | Create | /documents/{uid}                 | DocumentDto    | DocumentDto    | Uploads a new document (prescription, labs, etc.). | 2.5      |
+| IV.b | Read   | /documents/{uid}                 | -              | List DocumentDto | Retrieves all documents of a user.             | 2.5          |
+| IV.c | Read   | /documents/{uid}/{did}           | -              | DocumentDto    | Retrieves a specific document.                  | 2.5          |
+
+### 4.2. Data Transfer Objects
+
+```
+LoginDto
+{
+  "email": string,
+  "password": string 
+}
+```
+
+```
+RegisterDto 
+{
+  "fname": string,
+  "lname": string,
+  "email": string,
+  "password": string,
+  "phone": string,
+  "address": string,
+  "city": string,
+  "DOB": date,
+  "gender": string,
+  "blood_group": string
+}
+```
+
+```
+UserDto
+{
+  "uid": number,
+  "name": string,
+  "email": string,
+  "password": string,
+  "phone": string,
+  "address": string,
+  "city": string,
+  "DOB": date,
+  "gender": string,
+  "blood_group": string,
+  "last_visit": string,
+  "department": string,
+  "work_start": time,
+"work_end": time
+}
+```
+
+```
+AppointmentDto 
+{
+  "aid": number,
+  "patientId": number,
+  "doctorId": number,
+  "room": number,
+  "note": string,
+  "date": date,
+  "time": time,
+  "status": string
+}
+```
+
+```
+StatusDto 
+{
+  "patientId": number,
+  "doctorId": number,
+  "status": string
+}
+```
+
+```
+DocumentDto 
+{
+  "did": number,
+  "uid": number,
+  "documentType": string,
+  "fileName": string,
+}
+```
 
 ## 5. Technical Requirements
 
