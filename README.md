@@ -22,10 +22,10 @@ If the patient cannot make it to the scheduled appointment, they can either canc
 
 The profile page is the main hub where users access key features. Upon logging in, they see their basic information along with an option to edit their profile. A sidebar menu provides quick navigation to other pages.
 
-**Patient Profile**
+#### **Patient Profile**
 Patients can schedule, view, or cancel appointments, access medical documents and prescriptions, and log out.
 
-**Doctor Profile**
+#### **Doctor Profile**
 Doctors can manage appointments, view and update patient information, send documents and prescriptions, and log out.
 
 ### 2.4 Appointments page (doctor) [#4](https://github.com/hanacatic12/healthcare-management-system/issues/4#issue-2922985123)
